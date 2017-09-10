@@ -1,5 +1,5 @@
 {
-  "tiposDeRaid": [{"nombre":"Raikou","quorum":"8 a 10"},{"nombre":"Tyranitar","quorum":"6 a 8"},{"nombre":"Lapras","quorum":"6 a 8"},{"nombre":"Machamp","quorum":"2 a 4"}],
+  "tiposDeRaid": [{"nombre":"RAIKOU","quorum":"8 a 10"},{"nombre":"TYRANITAR","quorum":"6 a 8"},{"nombre":"LAPRAS","quorum":"6 a 8"},{"nombre":"MACHAMP","quorum":"2 a 4"},{"nombre":"SNORLAX","quorum":"6 a 8"},{"nombre":"CHARIZARD","quorum":"6 a 8"}],
   "gimnasios":[
   {
     "nombre": "12 Discipulos",
