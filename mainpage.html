@@ -1,0 +1,134 @@
+<!doctype HTML>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>
+      Generador de invitacion de incursiones
+    </title>
+    <script type = "text/javascript"  src="/data/clipboard.min.js"></script>
+    <script type = "text/javascript" 
+    
+    src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+ <script type = "text/javascript">
+   
+	
+	$.getJSON("data/datos.txt", function(data) {
+    var vals = [];
+    var valsGimnasios=[];
+    vals = data.tiposDeRaid;
+    valsGimnasios= data.gimnasios;
+    var $dropdown = $("#inputNivelRaid");
+    var $dlGimnasios = $("#dlGimnasio");
+    var $inGimnasios = $("#inGimnasio");
+    var $inHora= $("#inHora");
+    var d = new Date();
+    var n = d.getHours();
+    var m = d.getMinutes();
+    
+    
+
+ 
+    $inHora.val((n+1).toString() + ":" + m.toString());
+    $dropdown.empty();
+    //completa el combo con los tipos de raid
+    $.each(vals, function(index, value) {
+      $dropdown.append("<option>" + value.nombre + "</option>");
+    });
+    $.each(valsGimnasios, function(index, value) {
+      $dlGimnasios.append("<option>" + value.nombre + "</option>");
+    });
+    //evento seleccionar 
+    
+    var $btnGenerar = $("#btnGenerar");
+    var $btnWAPP = $("#btnWAPP");
+    
+    $btnWAPP.click(function ()
+    {
+      var clipboard=new Clipboard('.btn');
+              	clipboard.on('success', function(e) {
+                console.log(e);
+                });
+    });
+    $btnGenerar.click(function ()
+    {
+      //obtienen la plantilla
+      var rawFile = new XMLHttpRequest();
+      rawFile.open("GET", "data/template.txt", true);
+      rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4) {
+          var allText = rawFile.responseText;
+          var $txtResultado = $("#txaResultado");
+          //obtiene los valores a reemplazar
+          var raidSeleccionado=$dropdown[0].value;
+          var gimnasioSel=$inGimnasios.val();
+          var horaSel=$inHora.val();
+          var quorumSel;
+          var direccionSel;
+          
+          if (gimnasioSel=="")
+            {alert("Debe completar todos los campos");
+            return;}
+          //encuentra el quorum
+          $.each(vals, function(index, value) {
+            if (value.nombre==raidSeleccionado)
+            {
+              quorumSel=value.quorum;
+            }
+          });
+          //encuentra la direccion
+          $.each(valsGimnasios, function(index, value) {
+            if (value.nombre==gimnasioSel)
+            {
+              direccionSel=value.direccion;
+            }
+          });
+          
+
+          //realiza el reemplazo
+          var replacements={"%param1%":raidSeleccionado,
+          "%param2%":gimnasioSel,"%param3%":direccionSel, "%param4%":horaSel,"%param5%":quorumSel},
+            allText;
+            var salida = allText.replace(/%\w+%/g, function(all) { 
+              return replacements[all] || all;
+            });
+            
+            $txtResultado.val(salida);
+            $inGimnasios.val("");
+            
+          } 
+        }
+      rawFile.send();
+      
+    });
+});
+
+
+
+
+   
+
+ </script> 
+  </head>
+  <body item-width="200">
+    
+    Seleccione el raid:<br><select id='inputNivelRaid'>
+      </select><br>
+     Seleccione el gimnasio:<br>
+     <input type="text" id="inGimnasio" list="dlGimnasio"><br>
+     <datalist item-width="200" id="dlGimnasio">
+      </datalist>
+      Seleccione la hora:<br>
+      <input type="text" style="width:40px;" id="inHora" cols="30" rows="10"><br>
+     <button  type="button" id="btnGenerar" data-clipboard-action="copy" data-clipboard-target="#txaResultado">Generar</button><br>
+     <button class="btn" type="button" id="btnWAPP" data-clipboard-action="copy" data-clipboard-target="#txaResultado">Copiar WhatsApp</button><br>
+     
+    <textarea id="txaResultado" rows="10" cols="50">
+       
+        </textarea>
+    <br>
+   
+    <label style="font-weight:bold;font-size:10;">&#64 Todos los derechos reservados Todicamer, 2017 
+      </label>
+  </body>
+</html>

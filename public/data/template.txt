@@ -1,0 +1,24 @@
+*RAID %param1%*
+
+*GYM %param2%*
+
+%param3%
+
+Hora:%param4%
+
+Quorum necesario: %param5% personas
+
+Lista de Confirmados
+1)
+2)
+3)
+4)
+5)
+6)
+7)
+8)
+9)
+10)
+
+*Lista Oficial*
+Suerte Gente!

@@ -1,0 +1,125 @@
+{
+  "tiposDeRaid": [{"nombre":"Raikou","quorum":"8 a 10"},{"nombre":"Tyranitar","quorum":"6 a 8"},{"nombre":"Lapras","quorum":"6 a 8"},{"nombre":"Machamp","quorum":"2 a 4"}],
+  "gimnasios":[
+  {
+    "nombre": "12 Discipulos",
+    "direccion": "Av Las Americas entre 1er y 2o anillo"
+  },
+  {
+    "nombre": "3 Sabios Tres",
+    "direccion": "Plaza del estudiante"
+  },
+  {
+    "nombre": "Aguas Danzantes",
+    "direccion": "2o anillo Parque Urbano"
+  },
+  {
+    "nombre": "Angel Deteriorado",
+    "direccion": "calle lemoine y cordillera zona ex Terminal"
+  },
+  {
+    "nombre": "Capitan German Callejas",
+    "direccion": "Av Beni 3 y 4 anillo cerca del parque los mangales hamacas"
+  },
+  {
+    "nombre": "Catedral Santa Cruz",
+    "direccion": "Plaza 24 de Septiembre"
+  },
+  {
+    "nombre": "Cejis",
+    "direccion": "Av. Landivar(casi 2o Anillo)"
+  },
+  {
+    "nombre": "Cementerio General",
+    "direccion": "1er anillo plaza Cementerio"
+  },
+  {
+    "nombre": "Conif",
+    "direccion": "1er anillo 3 cuadras del palacio de justicia"
+  },
+  {
+    "nombre": "Cruz Verde",
+    "direccion": "plazuela Charcas entre 1er y 2o anillo"
+  },
+  {
+    "nombre": "El Carreton",
+    "direccion": "Parque el Arenal"
+  },
+  {
+    "nombre": "El Cristo",
+    "direccion": "El Cristo, Segundo Anillo"
+  },
+  {
+    "nombre": "El Machetero",
+    "direccion": "Plaza 24 de Septiembre"
+  },
+  {
+    "nombre": "Feria Barrio Lindo",
+    "direccion": "4o Anillo entre Av. Brasil y Av. 3 Pasos al frente"
+  },
+  {
+    "nombre": "Flor De Lata",
+    "direccion": "Saavedra esq Potosi"
+  },
+  {
+    "nombre": "Fuente Suto",
+    "direccion": "Calle Canada Strongest atras del KFC"
+  },
+  {
+    "nombre": "Iglesia Adventista del Septimo Dia",
+    "direccion": "Calle Campero y Bolivar"
+  },
+  {
+    "nombre": "Iglesia San Andres",
+    "direccion": "Calle Charcas esq. Beni"
+  },
+  {
+    "nombre": "La Mujer Crucena",
+    "direccion": "Plaza del estudiante"
+  },
+  {
+    "nombre": "Leon de Piedra",
+    "direccion": "Av San Martin 2y 3 Anillo"
+  },
+  {
+    "nombre": "Orgullo Camba",
+    "direccion": "Moldes esq Chuquisaca"
+  },
+  {
+    "nombre": "Parroquia San Martin de Porres",
+    "direccion": "Av Roca y Coronado entre 2o y 3er anillo"
+  },
+  {
+    "nombre": "Pato las Flores",
+    "direccion": "3er Anillo Interno Zona Abasto"
+  },
+  {
+    "nombre": "Puerta de Rostros",
+    "direccion": "Av San Martin (Modulos de arquitectura)"
+  },
+  {
+    "nombre": "Samo",
+    "direccion": "3r anillo interno zona abasto"
+  },
+  {
+    "nombre": "Torre American",
+    "direccion": "Av Suarez Arana Entre 1o y 2o"
+  },
+  {
+    "nombre": "Torre Santo Domingo",
+    "direccion": "Calle el Tao, Entre Suarez Arena y Trinidad entre 1o y 2oAnillo"
+  },
+  {
+    "nombre": "Universidad Nur",
+    "direccion": "Av Banzer 2 cuadras del 2o anillo"
+  },
+  {
+    "nombre": "UPDS",
+    "direccion": "Av. Beni 3 anillo en la universad domingo Savio"
+  },
+  {
+    "nombre": "Ventura Mall",
+    "direccion": "Ventura Mall, 4o anillo"
+  }
+]
+}

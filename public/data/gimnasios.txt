@@ -1,0 +1,12 @@
+nombre,direccion
+Flor De Lata,Saavedra esq Potosi
+Orgullo Camba,Moldes, esq Chuquisaca
+Pato las Flores,3er Anillo Interno Zona Abasto
+Cejis,Av. Landivar(casi 2o Anillo)
+UPDS,Av. Beni 3 anillo en la universad domingo Savio
+Aguas Danzantes, 2o anillo Parque Urbano
+Cementerio General, 1er anillo plaza Cementerio
+Conif, 1er anillo 3 cuadras del palacio de justicia
+Samo, 3r anillo interno zona abasto
+Angel Deteriorado, calle lemoine y cordillera zona ex Terminal
+Cruz Verde, plazuela Charcas entre 1er y 2o anillo
