@@ -18,8 +18,20 @@
     "direccion": "calle lemoine y cordillera zona ex Terminal"
   },
   {
+    "nombre": "Antorcha",
+    "direccion": "Barrio Urbari"
+  },
+  {
+    "nombre": "Aslam",
+    "direccion": "Campus UAGRAM cerca 2 anillo"
+  },
+  {
     "nombre": "Capitan German Callejas",
     "direccion": "Av Beni 3 y 4 anillo cerca del parque los mangales hamacas"
+  },
+  {
+    "nombre": "Casa Espanha",
+    "direccion": "1er anillo entre busch y centenario"
   },
   {
     "nombre": "Catedral Santa Cruz",
@@ -30,16 +42,44 @@
     "direccion": "Av. Landivar(casi 2o Anillo)"
   },
   {
-    "nombre": "Cementerio General",
-    "direccion": "1er anillo plaza Cementerio"
+    "nombre": "Chino Mendez",
+    "direccion": "Saavedra esquina Independencia una cuadra de la av. Irala"
+  },
+  {
+    "nombre": "Cies",
+    "direccion": "La Ramada Grigota entre 1er y 2o anillo"
+  },
+  {
+    "nombre": "Coliseo Jhon Pictor Blanco",
+    "direccion": "Coliseo Jhon Pictor Blanco"
   },
   {
     "nombre": "Conif",
     "direccion": "1er anillo 3 cuadras del palacio de justicia"
   },
   {
+    "nombre": "Cruz Lemoine",
+    "direccion": "Calle lemoine esquina Colon 3 cuadras de ex terminal"
+  },
+  {
     "nombre": "Cruz Verde",
     "direccion": "plazuela Charcas entre 1er y 2o anillo"
+  },
+  {
+    "nombre": "Cruz Verde El Deber",
+    "direccion": "Atras del Deber Segundo Anillo"
+  },
+  {
+    "nombre": "David Paz",
+    "direccion": "Omar Chavez esq Ana Barbara por la Gobernacion"
+  },
+  {
+    "nombre": "El Antiguo Pavo Real",
+    "direccion": "Coliseo Jhon Pictor Blanco"
+  },
+  {
+    "nombre": "El Caballito",
+    "direccion": "Campus UAGRAM entre 1o y 2o anillo"
   },
   {
     "nombre": "El Carreton",
@@ -54,6 +94,14 @@
     "direccion": "Plaza 24 de Septiembre"
   },
   {
+    "nombre": "El Periodista",
+    "direccion": "Campus UAGRAM cerca 2 anillo"
+  },
+  {
+    "nombre": "Fe Y Alegria",
+    "direccion": "Colegio Fe y Alegria entre landivar y grigota entre 1er y 2o anillo"
+  },
+  {
     "nombre": "Feria Barrio Lindo",
     "direccion": "4o Anillo entre Av. Brasil y Av. 3 Pasos al frente"
   },
@@ -64,6 +112,26 @@
   {
     "nombre": "Fuente Suto",
     "direccion": "Calle Canada Strongest atras del KFC"
+  },
+  {
+    "nombre": "Gral David Paz",
+    "direccion": "Parque Urbano 1 er Anillo"
+  },
+  {
+    "nombre": "Helicoptero",
+    "direccion": "Segundo Anillo Santos Dumont"
+  },
+  {
+    "nombre": "Hombre Lobo",
+    "direccion": "1er anillo entrando a la ramada"
+  },
+  {
+    "nombre": "Homenaje a los Canillitas",
+    "direccion": "Atras del Deber Segundo Anillo"
+  },
+  {
+    "nombre": "Humberto Vasquez",
+    "direccion": "Grigota 3 cuadras del segundo anillo"
   },
   {
     "nombre": "Iglesia Adventista del Septimo Dia",
@@ -82,8 +150,40 @@
     "direccion": "Av San Martin 2y 3 Anillo"
   },
   {
+    "nombre": "Luna Camba",
+    "direccion": "Segundo Anillo Parquer Urbano 2 cuadras"
+  },
+  {
+    "nombre": "Madre India",
+    "direccion": "Madre India Segundo Anilo Zona La Barranca"
+  },
+  {
+    "nombre": "Mundo Encantado",
+    "direccion": "2 cuadras de pirai y segundo anillo"
+  },
+  {
+    "nombre": "Mural 2 Cabezas",
+    "direccion": "2o Anillo y Brasil"
+  },
+  {
+    "nombre": "Mural Vengan mis ninhos",
+    "direccion": "Calle La paz esquina Moldes cerca Cainco"
+  },
+  {
+    "nombre": "Muro Grafitti",
+    "direccion": "Calle Moldes esq Calleja atras del Marista"
+  },
+  {
+    "nombre": "Nuflo de Chavez Cementerio General",
+    "direccion": "1er anillo plaza Cementerio"
+  },
+  {
     "nombre": "Orgullo Camba",
     "direccion": "Moldes esq Chuquisaca"
+  },
+  {
+    "nombre": "Pare de Sufrir",
+    "direccion": "1er anillo esquina florida"
   },
   {
     "nombre": "Parroquia San Martin de Porres",
@@ -92,6 +192,14 @@
   {
     "nombre": "Pato las Flores",
     "direccion": "3er Anillo Interno Zona Abasto"
+  },
+  {
+    "nombre": "Plaza de la Autonomia y Democracia",
+    "direccion": "Campus UAGRAM cerca 2 anillo"
+  },
+  {
+    "nombre": "Plazuela Blacutt",
+    "direccion": "Plazuela Blacutt"
   },
   {
     "nombre": "Puerta de Rostros",
@@ -120,6 +228,10 @@
   {
     "nombre": "Ventura Mall",
     "direccion": "Ventura Mall, 4o anillo"
+  },
+  {
+    "nombre": "Volando",
+    "direccion": "Segundo Anillo Santos Dumont"
   }
 ]
 }
