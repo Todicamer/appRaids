@@ -1,105 +1,79 @@
-//  OpenShift sample Node application
-var express = require('express'),
-    app     = express(),
-    morgan  = require('morgan');
-    
-Object.assign=require('object-assign')
+var http = require('http');
+var url = require("url");
+var fs = require("fs");
+var express = require("express");
 
-app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'))
+//para que soporte openshift XD!
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
-var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
-    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
-    mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL,
-    mongoURLLabel = "";
 
-if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
-  var mongoServiceName = process.env.DATABASE_SERVICE_NAME.toUpperCase(),
-      mongoHost = process.env[mongoServiceName + '_SERVICE_HOST'],
-      mongoPort = process.env[mongoServiceName + '_SERVICE_PORT'],
-      mongoDatabase = process.env[mongoServiceName + '_DATABASE'],
-      mongoPassword = process.env[mongoServiceName + '_PASSWORD']
-      mongoUser = process.env[mongoServiceName + '_USER'];
 
-  if (mongoHost && mongoPort && mongoDatabase) {
-    mongoURLLabel = mongoURL = 'mongodb://';
-    if (mongoUser && mongoPassword) {
-      mongoURL += mongoUser + ':' + mongoPassword + '@';
-    }
-    // Provide UI label that excludes user id and pw
-    mongoURLLabel += mongoHost + ':' + mongoPort + '/' + mongoDatabase;
-    mongoURL += mongoHost + ':' +  mongoPort + '/' + mongoDatabase;
+const jsdom = require("jsdom");
+const {JSDOM} = jsdom;
+const options = {
+    contentType: 'text/html',
+  };
+var app=express();
+app.use(express.static('public'));
+app.get('/',function(req, res){
+    res.setHeader("Content-Type", "text/html");
+    fs.readFile("mainpage.html", function(err, data)
+    {
+        if(err){
+            res.writeHead(400);
+            res.write('Sitio no encontrado, le pelaste choco');
+        }
+        else{
+            res.writeHead(200, {'Content-Type': 'text/html'});
+            res.write(data);
+            JSDOM.fromFile("mainpage.html",options).then(dom => {
+                //dom.window.inputNivelRaid.value='4';
+                console.log("mainp");
+              });
+            //const dom= new JSDOM(data);
+            //console.log(dom.window.document.querySelector("inputRaid".textContent));
+            //jsdom.env('mainpage.html',[ 'jquery-1.7.1.min.js' ],function(errors, window) {
+             //   console.log("there have been", window.$("a").length, "nodejs releases!");
+             // });
+            //call_jsdom(data, function (window) {
+            //    var $ = window.$;
+        //
+          //      var inputRaid = $("inputRaid").text();
+            //    console.log(inputRaid);
+        //
+          //      console.log(documentToSource(window.document));
+           // });
+            
+            res.end();
+        }
 
-  }
-}
-var db = null,
-    dbDetails = new Object();
+    });
+}).post('/generar', function(req, res){
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write('generado');
+});
 
-var initDb = function(callback) {
-  if (mongoURL == null) return;
-
-  var mongodb = require('mongodb');
-  if (mongodb == null) return;
-
-  mongodb.connect(mongoURL, function(err, conn) {
-    if (err) {
-      callback(err);
-      return;
-    }
-
-    db = conn;
-    dbDetails.databaseName = db.databaseName;
-    dbDetails.url = mongoURLLabel;
-    dbDetails.type = 'MongoDB';
-
-    console.log('Connected to MongoDB at: %s', mongoURL);
+app.use(function(req, res, next){
+    res.setHeader('Content-Type', 'text/plain');
+    res.send(404, 'Pagina no encontrada, le pelaste');
+})
+app.listen(server_port, server_ip_address, function(){
+    console.log("Listening on " + server_ip_address + ", server_port " + server_port)
   });
-};
+//app.listen(8080);
 
-app.get('/', function (req, res) {
-  // try to initialize the db on every request if it's not already
-  // initialized.
-  if (!db) {
-    initDb(function(err){});
-  }
-  if (db) {
-    var col = db.collection('counts');
-    // Create a document with request IP and current time of request
-    col.insert({ip: req.ip, date: Date.now()});
-    col.count(function(err, count){
-      res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
-    });
-  } else {
-    res.render('index.html', { pageCountMessage : null});
-  }
-});
-
-app.get('/pagecount', function (req, res) {
-  // try to initialize the db on every request if it's not already
-  // initialized.
-  if (!db) {
-    initDb(function(err){});
-  }
-  if (db) {
-    db.collection('counts').count(function(err, count ){
-      res.send('{ pageCount: ' + count + '}');
-    });
-  } else {
-    res.send('{ pageCount: -1 }');
-  }
-});
-
-// error handling
-app.use(function(err, req, res, next){
-  console.error(err.stack);
-  res.status(500).send('Something bad happened!');
-});
-
-initDb(function(err){
-  console.log('Error connecting to Mongo. Message:\n'+err);
-});
-
-app.listen(port, ip);
-console.log('Server running on http://%s:%s', ip, port);
-
-module.exports = app ;
+function call_jsdom(source, callback) {
+    jsdom.env(source,[ 'jquery-1.7.1.min.js' ],
+        function(errors, window) {
+            process.nextTick(
+                function () {
+                    if (errors) {
+                        throw new Error("There were errors: "+errors);
+                    }
+                    callback(window);
+                }
+            );
+        }
+    );
+}
