@@ -9,7 +9,7 @@ var server_ip_address = process.env.NODEJS_SERVICE_HOST || '127.0.0.1'
 
 
 
-const jsdom = requirne("jsdom");
+const jsdom = require("jsdom");
 const {JSDOM} = jsdom;
 const options = {
     contentType: 'text/html',
