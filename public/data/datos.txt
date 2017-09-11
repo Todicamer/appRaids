@@ -22,16 +22,72 @@
     "direccion": "Barrio Urbari"
   },
   {
+    "nombre": "Arbol Grafitti",
+    "direccion": "3er anillo externo entre roca y coronado y radial 21"
+  },
+  {
+    "nombre": "Arrabalero Mural",
+    "direccion": "Av Pirai 2 cuadras antes del 3er anillo"
+  },
+  {
     "nombre": "Aslam",
     "direccion": "Campus UAGRAM cerca 2 anillo"
+  },
+  {
+    "nombre": "Atlantida",
+    "direccion": "Segundo Anillo netre canal cotoca y Paragua"
+  },
+  {
+    "nombre": "Atlas",
+    "direccion": "4 anillo doble via la guardia 3 cuadras entrando"
+  },
+  {
+    "nombre": "Autonomia",
+    "direccion": "Grigota entre 4o y 3 anillo"
+  },
+  {
+    "nombre": "Banho de Madera",
+    "direccion": "Entre Beni y Bancer entre 3 y 4 anillo"
+  },
+  {
+    "nombre": "Bolas de Saguapac",
+    "direccion": "Paragua 3er anillo"
+  },
+  {
+    "nombre": "Busto Antonio Jose De Sucre",
+    "direccion": "Santos Dumont por la FAB"
+  },
+  {
+    "nombre": "Camba Florencio",
+    "direccion": "Virgen de Cotoca entre 3o y 4 anillo"
+  },
+  {
+    "nombre": "Cambodromo",
+    "direccion": "Mutualista Cuarto Anillo"
+  },
+  {
+    "nombre": "Campanero Iglesia San Joaquin",
+    "direccion": "Entre Av Mutualista y Paragua entre 3er y 4 anillo"
   },
   {
     "nombre": "Capitan German Callejas",
     "direccion": "Av Beni 3 y 4 anillo cerca del parque los mangales hamacas"
   },
   {
+    "nombre": "Capitan German Callejas",
+    "direccion": "Av Beni entre 3er y 4 anillo"
+  },
+  {
+    "nombre": "Capitan Heroes Del Chaco",
+    "direccion": "3 pasos al frente 4 cuadras del segundo anillo"
+  },
+  {
     "nombre": "Casa Espanha",
     "direccion": "1er anillo entre busch y centenario"
+  },
+  {
+    "nombre": "Catarata Nueva",
+    "direccion": "San Aurelio casi 3er anillo"
   },
   {
     "nombre": "Catedral Santa Cruz",
@@ -42,6 +98,10 @@
     "direccion": "Av. Landivar(casi 2o Anillo)"
   },
   {
+    "nombre": "Centro deportivo Petroleros FC",
+    "direccion": "Enre Roca y Coronado y Av El Palmar entre 3o 4 anillo"
+  },
+  {
     "nombre": "Chino Mendez",
     "direccion": "Saavedra esquina Independencia una cuadra de la av. Irala"
   },
@@ -50,16 +110,40 @@
     "direccion": "La Ramada Grigota entre 1er y 2o anillo"
   },
   {
+    "nombre": "CIMAL",
+    "direccion": "Segundo anillo entre canal cotoca y virgen de cotoca"
+  },
+  {
     "nombre": "Coliseo Jhon Pictor Blanco",
     "direccion": "Coliseo Jhon Pictor Blanco"
+  },
+  {
+    "nombre": "Condor Espabol",
+    "direccion": "4 anillo alemana"
   },
   {
     "nombre": "Conif",
     "direccion": "1er anillo 3 cuadras del palacio de justicia"
   },
   {
+    "nombre": "Cristo Redentor",
+    "direccion": "Calle Los Mapajos entre mutualista y Alemana entre 2o y 3er anillo"
+  },
+  {
+    "nombre": "Cross Large",
+    "direccion": "Av San Martin entre 3o y 4 anillo calle roca Aguilera"
+  },
+  {
+    "nombre": "Cruz Abogados",
+    "direccion": "3er anillo externo UTEPSA"
+  },
+  {
     "nombre": "Cruz Lemoine",
     "direccion": "Calle lemoine esquina Colon 3 cuadras de ex terminal"
+  },
+  {
+    "nombre": "Cruz San Juan Masias",
+    "direccion": "4 anillo 2 cuadras entre mutualista y alemana"
   },
   {
     "nombre": "Cruz Verde",
@@ -70,8 +154,24 @@
     "direccion": "Atras del Deber Segundo Anillo"
   },
   {
+    "nombre": "Cruz Verde Mutualista",
+    "direccion": "3 er anillo interno entrando 2 cuadras Mercado Mutualista"
+  },
+  {
     "nombre": "David Paz",
     "direccion": "Omar Chavez esq Ana Barbara por la Gobernacion"
+  },
+  {
+    "nombre": "Don Bosco Centenario",
+    "direccion": "2 cuadras del 3 er anillo interno Av Hernado Sanabria/Radial 21"
+  },
+  {
+    "nombre": "Dr Soria Galvarro",
+    "direccion": "Santos Dumont 3 cuadras del segundo anillo zona Saguapac"
+  },
+  {
+    "nombre": "Dragones Statue",
+    "direccion": "4 anillo al frente del ventura Mall"
   },
   {
     "nombre": "El Antiguo Pavo Real",
@@ -98,6 +198,18 @@
     "direccion": "Campus UAGRAM cerca 2 anillo"
   },
   {
+    "nombre": "El Tren Verde",
+    "direccion": "En la terminal Bimodal"
+  },
+  {
+    "nombre": "Equipegol",
+    "direccion": "Av San Martin casi 4 anillo"
+  },
+  {
+    "nombre": "Escudo Kronenberg",
+    "direccion": "Av Alemana entre 3er y 4 anillo"
+  },
+  {
     "nombre": "Fe Y Alegria",
     "direccion": "Colegio Fe y Alegria entre landivar y grigota entre 1er y 2o anillo"
   },
@@ -106,16 +218,36 @@
     "direccion": "4o Anillo entre Av. Brasil y Av. 3 Pasos al frente"
   },
   {
+    "nombre": "Feria Barrio Lindo",
+    "direccion": "Avenida Carmelo Ortiz entre Brasil y 3 pasos al frente"
+  },
+  {
     "nombre": "Flor De Lata",
     "direccion": "Saavedra esq Potosi"
+  },
+  {
+    "nombre": "Fuente Parque los mangales",
+    "direccion": "Parque los mangales 2 Beni pasando el 4 anillo"
   },
   {
     "nombre": "Fuente Suto",
     "direccion": "Calle Canada Strongest atras del KFC"
   },
   {
+    "nombre": "Garzas de Piedra",
+    "direccion": "Mutualista entre 2o y 3er anillo"
+  },
+  {
+    "nombre": "Gral Banzer",
+    "direccion": "Cristo Redentor 4 anillo Av Banzer"
+  },
+  {
     "nombre": "Gral David Paz",
     "direccion": "Parque Urbano 1 er Anillo"
+  },
+  {
+    "nombre": "Gran Centro",
+    "direccion": "3er anillo interno por el Zoologico"
   },
   {
     "nombre": "Helicoptero",
@@ -134,20 +266,64 @@
     "direccion": "Grigota 3 cuadras del segundo anillo"
   },
   {
+    "nombre": "IC Norte Mega Market",
+    "direccion": "3er anillo Busch IC Norte"
+  },
+  {
+    "nombre": "Iglesia",
+    "direccion": "3er anillo mercado mutualista"
+  },
+  {
     "nombre": "Iglesia Adventista del Septimo Dia",
     "direccion": "Calle Campero y Bolivar"
+  },
+  {
+    "nombre": "Iglesia el Senor de Los Milagros",
+    "direccion": "Barrio Urbari 3 cuadras del 3er anillo zona abasto"
   },
   {
     "nombre": "Iglesia San Andres",
     "direccion": "Calle Charcas esq. Beni"
   },
   {
+    "nombre": "Iglesia Torre Fuerte",
+    "direccion": "Parque los mangales roca y coronado 3 er anillo"
+  },
+  {
+    "nombre": "Jinetes del Museo",
+    "direccion": "Av Busch casi 4o anillo"
+  },
+  {
+    "nombre": "La Iluminda Azul",
+    "direccion": "San Aurelio casi 3er anillo"
+  },
+  {
+    "nombre": "La Macarena",
+    "direccion": "Grigota entre 4o y 3 anillo"
+  },
+  {
+    "nombre": "La Monja",
+    "direccion": "4 anillo enre mutualista y alemana"
+  },
+  {
     "nombre": "La Mujer Crucena",
     "direccion": "Plaza del estudiante"
   },
   {
+    "nombre": "Leo de Piedra",
+    "direccion": "Av San Martin entre 2o y 3er anillo"
+  },
+  {
     "nombre": "Leon de Piedra",
     "direccion": "Av San Martin 2y 3 Anillo"
+  },
+  {
+    "nombre": "Leon De Piedra 1",
+    "direccion": "4 anillo alemana"
+  },
+  {
+    "nombre": "Los Mangales Hamacas",
+    "direccion": "Parque los mangales de hamacas entre 3er y 4anillo"
   },
   {
     "nombre": "Luna Camba",
@@ -158,12 +334,28 @@
     "direccion": "Madre India Segundo Anilo Zona La Barranca"
   },
   {
+    "nombre": "Miral Piramide Blanca",
+    "direccion": "Av Bush Modulos UAGRM entre 2o y 3er anillo"
+  },
+  {
     "nombre": "Mundo Encantado",
     "direccion": "2 cuadras de pirai y segundo anillo"
   },
   {
     "nombre": "Mural 2 Cabezas",
     "direccion": "2o Anillo y Brasil"
+  },
+  {
+    "nombre": "Mural Chiquitanos",
+    "direccion": "Barrio Urbari 1 cuadras del 3er anillo zona abasto"
+  },
+  {
+    "nombre": "Mural de Piedra Infantil",
+    "direccion": "Av el Palmar entre 3er y 4 anillo"
+  },
+  {
+    "nombre": "Mural Rostros",
+    "direccion": "Virgen de Cotoca entre 3o y 4 anillo"
   },
   {
     "nombre": "Mural Vengan mis ninhos",
@@ -182,8 +374,28 @@
     "direccion": "Moldes esq Chuquisaca"
   },
   {
+    "nombre": "Paints Tower",
+    "direccion": "pasando 4 anillo y paragua por la UPSA"
+  },
+  {
     "nombre": "Pare de Sufrir",
     "direccion": "1er anillo esquina florida"
+  },
+  {
+    "nombre": "Parque de la Autonomia",
+    "direccion": "4 anillo entre roca y Coronado y Radial 21"
+  },
+  {
+    "nombre": "Parque La Chacarilla",
+    "direccion": "Entre canal cotoca y paragua entre 3er y 4 anillo"
+  },
+  {
+    "nombre": "Parque Urbano San Aurelio",
+    "direccion": "San Aurelio 4 cuadras del 4 anillo"
+  },
+  {
+    "nombre": "Parroquia Maria Rene de La Paz",
+    "direccion": "Cuarto Anillo y Virgen de Cotoca"
   },
   {
     "nombre": "Parroquia San Martin de Porres",
@@ -194,20 +406,72 @@
     "direccion": "3er Anillo Interno Zona Abasto"
   },
   {
+    "nombre": "Paty Eventos",
+    "direccion": "3 pasos al frente 5 cuadras del 4 anillo"
+  },
+  {
+    "nombre": "Pescera Gigante",
+    "direccion": "Mutualista entre 2o y 3er anillo"
+  },
+  {
+    "nombre": "Plaza Bautista",
+    "direccion": "Entre Beni y Alemana entre 3er anillo y Av Los Cusis"
+  },
+  {
     "nombre": "Plaza de la Autonomia y Democracia",
     "direccion": "Campus UAGRAM cerca 2 anillo"
+  },
+  {
+    "nombre": "Plaza de la Cruz",
+    "direccion": "Radial 10 4 cuadras del 4 anillo"
+  },
+  {
+    "nombre": "Plaza Landivar",
+    "direccion": "La Barranca 3 cuadras del 3er anillo"
   },
   {
     "nombre": "Plazuela Blacutt",
     "direccion": "Plazuela Blacutt"
   },
   {
+    "nombre": "Plazuela Guaracachi",
+    "direccion": "Cuarto Anillo pasando Por la Brasil, por la caja petrolera Guaracachi"
+  },
+  {
     "nombre": "Puerta de Rostros",
     "direccion": "Av San Martin (Modulos de arquitectura)"
   },
   {
+    "nombre": "Puerta del Sol",
+    "direccion": "Santos Dumont 3 er anillo"
+  },
+  {
+    "nombre": "Rana Ojos Rojos",
+    "direccion": "Grigota entre 4o y 3 anillo"
+  },
+  {
+    "nombre": "Saguapac Water Tower",
+    "direccion": "Segundo Anillo Saguapac"
+  },
+  {
     "nombre": "Samo",
     "direccion": "3r anillo interno zona abasto"
+  },
+  {
+    "nombre": "Samo",
+    "direccion": "Av Pirai 3er anillo entrando 2 cuadras"
+  },
+  {
+    "nombre": "San Salvador",
+    "direccion": "Zona Mercado Mutualista calle Jose Pabon pasando el 3er anillo"
+  },
+  {
+    "nombre": "Terminal Bimodal",
+    "direccion": "En la terminal Bimodal"
+  },
+  {
+    "nombre": "The Chiriguano",
+    "direccion": "3er anillo comercial chiriguano"
   },
   {
     "nombre": "Torre American",
@@ -218,6 +482,14 @@
     "direccion": "Calle el Tao, Entre Suarez Arena y Trinidad entre 1o y 2oAnillo"
   },
   {
+    "nombre": "Tucan Mangales 3",
+    "direccion": "Parque los mangales roca y coronado 3 er anillo"
+  },
+  {
+    "nombre": "Udabol",
+    "direccion": "3er anillo UDABOL"
+  },
+  {
     "nombre": "Universidad Nur",
     "direccion": "Av Banzer 2 cuadras del 2o anillo"
   },
@@ -226,8 +498,36 @@
     "direccion": "Av. Beni 3 anillo en la universad domingo Savio"
   },
   {
+    "nombre": "UPDS",
+    "direccion": "Av Beni 3 er anillo Universidad Domingo Savio"
+  },
+  {
+    "nombre": "UPSA Convention Center",
+    "direccion": "UPSA"
+  },
+  {
+    "nombre": "Utepsa",
+    "direccion": "3er anillo UTEPSA"
+  },
+  {
     "nombre": "Ventura Mall",
     "direccion": "Ventura Mall, 4o anillo"
+  },
+  {
+    "nombre": "Virgen 2",
+    "direccion": "Mercado Mutualista 3 er anillo"
+  },
+  {
+    "nombre": "Virgen de Guadalupe",
+    "direccion": "3 er anillo interno Av Hernado Sanabria/Radial 21"
+  },
+  {
+    "nombre": "Virgen Del Socavon",
+    "direccion": "Grigota 3er anillo"
+  },
+  {
+    "nombre": "Virgen Maria de Equipe",
+    "direccion": "Av San Martin entrando calle Cordoba entre 2o y 3er anillo"
   },
   {
     "nombre": "Volando",
