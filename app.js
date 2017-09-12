@@ -32,19 +32,7 @@ app.get('/',function(req, res){
                 //dom.window.inputNivelRaid.value='4';
                 console.log("mainp");
               });
-            //const dom= new JSDOM(data);
-            //console.log(dom.window.document.querySelector("inputRaid".textContent));
-            //jsdom.env('mainpage.html',[ 'jquery-1.7.1.min.js' ],function(errors, window) {
-             //   console.log("there have been", window.$("a").length, "nodejs releases!");
-             // });
-            //call_jsdom(data, function (window) {
-            //    var $ = window.$;
-        //
-          //      var inputRaid = $("inputRaid").text();
-            //    console.log(inputRaid);
-        //
-          //      console.log(documentToSource(window.document));
-           // });
+            
             
             res.end();
         }

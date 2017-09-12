@@ -22,6 +22,7 @@
     var $dlGimnasios = $("#dlGimnasio");
     var $inGimnasios = $("#inGimnasio");
     var $inHora= $("#inHora");
+    var $outHora= $("#outHora");
     var d = new Date();
     var n = d.getHours();
     var m = d.getMinutes();
@@ -30,6 +31,7 @@
 
  
     $inHora.val((n+1).toString() + ":" + m.toString());
+    
     $dropdown.empty();
     //completa el combo con los tipos de raid
     $.each(vals, function(index, value) {
@@ -63,7 +65,9 @@
           var raidSeleccionado=$dropdown[0].value;
           var gimnasioSel=$inGimnasios.val();
           var horaSel=$inHora.val();
+          var horaOutSel=$outHora.val();
           var quorumSel;
+          var emojiSel
           var direccionSel;
           
           if (gimnasioSel=="")
@@ -74,7 +78,9 @@
             if (value.nombre==raidSeleccionado)
             {
               quorumSel=value.quorum;
+              emojiSel=value.emoji;
             }
+            
           });
           //encuentra la direccion
           $.each(valsGimnasios, function(index, value) {
@@ -83,11 +89,17 @@
               direccionSel=value.direccion;
             }
           });
-          
+          if (horaOutSel!="")
+          {
+           horaOutSel= "Se va " + horaOutSel;
+          }
+          else{
+            horaOutSel= " ";
+          }
 
           //realiza el reemplazo
-          var replacements={"%param1%":raidSeleccionado,
-          "%param2%":gimnasioSel,"%param3%":direccionSel, "%param4%":horaSel,"%param5%":quorumSel},
+          var replacements={"%param1%":raidSeleccionado,"%param1a%":emojiSel,
+          "%param2%":gimnasioSel,"%param3%":direccionSel, "%param4%":horaSel,"%param4a%":horaOutSel,"%param5%":quorumSel},
             allText;
             var salida = allText.replace(/%\w+%/g, function(all) { 
               return replacements[all] || all;
@@ -120,6 +132,8 @@
       </datalist>
       Seleccione la hora:<br>
       <input type="text" style="width:40px;" id="inHora" cols="30" rows="10"><br>
+      Selecciona hora de fin(se va):<br>
+      <input type="text" style="width:40px;" id="outHora" cols="30" rows="10"><br>
      <button  type="button" id="btnGenerar" data-clipboard-action="copy" data-clipboard-target="#txaResultado">Generar</button><br>
      <button class="btn" type="button" id="btnWAPP" data-clipboard-action="copy" data-clipboard-target="#txaResultado">Copiar WhatsApp</button><br>
      
